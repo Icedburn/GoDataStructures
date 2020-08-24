@@ -6,7 +6,111 @@ import (
 )
 
 func main() {
-	testDeque()
+	testStack()
+}
+
+func testStack()  {
+	st := new(datastructures.Stack)
+	fmt.Println("Initial Stack")
+	fmt.Println(st.ToString())
+	fmt.Println("Count: " + st.Length())
+
+	fmt.Println("Push obj1")
+	st.Push("obj1")
+	fmt.Println(st.ToString())
+	fmt.Println("Count: " + st.Length())
+
+	fmt.Println("Push obj2")
+	st.Push("obj2")
+	fmt.Println(st.ToString())
+	fmt.Println("Count: " + st.Length())
+
+	fmt.Println("Push obj3")
+	st.Push("obj3")
+	fmt.Println(st.ToString())
+	fmt.Println("Count: " + st.Length())
+
+	fmt.Println("PEAK")
+	fmt.Println("Peaking: " + st.Peak())
+	fmt.Println(st.ToString())
+	fmt.Println("Count: " + st.Length())
+
+	fmt.Println("Popping")
+	fmt.Println("Popped: " + st.Pop())
+	fmt.Println(st.ToString())
+	fmt.Println("Count: " + st.Length())
+
+	fmt.Println("Popping")
+	fmt.Println("Popped: " + st.Pop())
+	fmt.Println(st.ToString())
+	fmt.Println("Count: " + st.Length())
+
+	fmt.Println("Popping")
+	fmt.Println("Popped: " + st.Pop())
+	fmt.Println(st.ToString())
+	fmt.Println("Count: " + st.Length())
+
+	fmt.Println("Popping")
+	fmt.Println("Popped: " + st.Pop())
+	fmt.Println(st.ToString())
+	fmt.Println("Count: " + st.Length())
+
+	fmt.Println("Popping")
+	fmt.Println("Popped: " + st.Pop())
+	fmt.Println(st.ToString())
+	fmt.Println("Count: " + st.Length())
+}
+
+func testQueue()  {
+	qu := new(datastructures.Queue)
+	fmt.Println("Initial Queue")
+	fmt.Println(qu.ToString())
+	fmt.Println("Count: " + qu.Length())
+
+	fmt.Println("Queue obj1")
+	qu.Queue("obj1")
+	fmt.Println(qu.ToString())
+	fmt.Println("Count: " + qu.Length())
+
+	fmt.Println("Queue obj2")
+	qu.Queue("obj2")
+	fmt.Println(qu.ToString())
+	fmt.Println("Count: " + qu.Length())
+
+	fmt.Println("Queue obj3")
+	qu.Queue("obj3")
+	fmt.Println(qu.ToString())
+	fmt.Println("Count: " + qu.Length())
+
+	fmt.Println("PEAK")
+	fmt.Println("Peaking: " + qu.Peak())
+	fmt.Println(qu.ToString())
+	fmt.Println("Count: " + qu.Length())
+
+	fmt.Println("Dequeue")
+	fmt.Println("Dequeue: " + qu.Dequeue())
+	fmt.Println(qu.ToString())
+	fmt.Println("Count: " + qu.Length())
+
+	fmt.Println("Dequeue")
+	fmt.Println("Dequeue: " + qu.Dequeue())
+	fmt.Println(qu.ToString())
+	fmt.Println("Count: " + qu.Length())
+
+	fmt.Println("Dequeue")
+	fmt.Println("Dequeue: " + qu.Dequeue())
+	fmt.Println(qu.ToString())
+	fmt.Println("Count: " + qu.Length())
+
+	fmt.Println("Dequeue")
+	fmt.Println("Dequeue: " + qu.Dequeue())
+	fmt.Println(qu.ToString())
+	fmt.Println("Count: " + qu.Length())
+
+	fmt.Println("Dequeue")
+	fmt.Println("Dequeue: " + qu.Dequeue())
+	fmt.Println(qu.ToString())
+	fmt.Println("Count: " + qu.Length())
 }
 
 func testDeque() {
